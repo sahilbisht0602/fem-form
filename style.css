@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex-features {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.isShown {
+  display: block;
+}
+
+.notShown {
+  display: none !important;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(4, 100%, 67%);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.features {
+  gap: 10px;
+}
+
+.description {
+  padding: 40px 20px;
+  gap: 24px;
+}
+
+.darkblue {
+  color: hsl(234, 29%, 20%);
+}
+
+.subtitle {
+  color: hsl(235, 18%, 26%);
+  line-height: 24px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mobile-bg {
+  width: 100%;
+}
+
+form input {
+  padding: 20px;
+  margin-top: 8px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+input::placeholder {
+  font-size: 14px;
+  color: hsl(231, 7%, 60%);
+}
+
+.btn {
+  margin-top: 18px;
+  background: hsl(234, 29%, 20%);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    90.4deg,
+    rgb(244, 199, 62) -3.8%,
+    rgb(244, 62, 62) 46.8%,
+    rgb(245, 61, 195) 98.8%
+  );
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.desktp-bg {
+  display: none;
+}
+
+.error {
+  background-color: hsl(6, 100%, 92%) !important;
+  border: 1px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%) !important;
+}
+
+.thankyou-content {
+  padding: 158px 20px 20px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-text {
+  max-width: 280px;
+  font-size: 42px;
+  margin-top: 28px;
+}
+
+.mt {
+  margin-top: 18px;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .mobile-bg {
+    display: none;
+  }
+  .desktp-bg {
+    display: block;
+  }
+  .description {
+    align-self: center;
+  }
+
+  .thankyou-content {
+    background-color: #fff;
+    max-width: 550px;
+    max-height: 500px;
+    padding: 38px;
+    border-radius: 28px;
+    justify-content: center;
+  }
+
+  .btn {
+    margin-top: 28px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
